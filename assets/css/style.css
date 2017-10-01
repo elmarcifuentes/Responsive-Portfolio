@@ -200,7 +200,7 @@ h3,
 
 .auth-image {
   float: left;
-  width: 200px;
+  width: 300px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -278,4 +278,63 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/* ===== 980px Media Screen Tag ===== */
+@media screen and (max-width: 980px) {
+  .container {
+    max-width: 760px;
+  }
+  .main-section {
+    max-width: 450px;
+  }
+  .auth-image {
+  float: none;
+  width: 388px;
+  }
+}
+
+/* ===== 768px Media Screen Tag ===== */
+@media screen and (max-width: 768px) {
+  .container {
+  max-width: 660px;
+  }
+  .main-section {
+  max-width: 660px;
+  }
+  .auth-image {
+  float: left;
+  width: 300px;
+  }
+  .sidebar {
+  max-width: 700px;
+  margin-bottom: 40px;
+  }
+}
+
+/* ===== 640px Media Screen Tag ===== */
+@media screen and (max-width: 640px) {
+  #masthead {
+  position: static;
+  }
+  .container {
+  max-width: 640px;
+  }
+  .main-section {
+  max-width: 640px;
+  margin-top: -120px;
+  }
+  .auth-image {
+  float: none;
+  width: 300px;
+  }
+  #logo {
+  width: 100%;
+  }
+  nav {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
 }
